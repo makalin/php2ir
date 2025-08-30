@@ -1,0 +1,101 @@
+# Build artifacts
+target/
+build/
+dist/
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.elf
+*.a
+*.lib
+
+# LLVM IR files
+*.ll
+*.bc
+*.s
+*.asm
+
+# Rust/Cargo (if using Rust backend)
+Cargo.lock
+target/
+**/*.rs.bk
+
+# C++ build artifacts
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.a
+*.lib
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+build/
+out/
+
+# PHP files (if any)
+*.php~
+*.php.bak
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime and test artifacts
+*.profdata
+*.profraw
+*.gcda
+*.gcno
+*.gcov
+coverage/
+*.out
+
+# Dependencies
+vendor/
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Test artifacts
+test-results/
+*.test
+*.test.*

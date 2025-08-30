@@ -1,0 +1,52 @@
+php2ir - Direct PHP → LLVM IR AOT compiler
+Copyright 2025 Mehmet T. AKALIN
+
+This product includes software developed by:
+- The LLVM Project (https://llvm.org/)
+- The Rust Project (https://www.rust-lang.org/)
+- The PHP Group (https://www.php.net/)
+
+Third-party components and their licenses:
+
+LLVM:
+  Copyright (c) 2003-2025 University of Illinois at Urbana-Champaign.
+  Licensed under the Apache License v2.0 with LLVM Exceptions.
+  See https://llvm.org/LICENSE.txt for license information.
+
+Rust:
+  Copyright (c) 2010 The Rust Project Developers.
+  Licensed under the Apache License, Version 2.0 or the MIT license.
+  See https://github.com/rust-lang/rust/blob/master/LICENSE-APACHE
+
+PHP:
+  Copyright (c) 1999-2025 The PHP Group.
+  Licensed under the PHP License v3.01.
+  See https://www.php.net/license/3_01.txt
+
+inkwell (LLVM bindings for Rust):
+  Copyright (c) 2017 The inkwell Developers.
+  Licensed under the MIT License.
+  See https://github.com/TheDan64/inkwell/blob/master/LICENSE
+
+clap (Command Line Argument Parser):
+  Copyright (c) 2015-2025 Kevin B. Knapp and clap-rs Contributors.
+  Licensed under the Apache License, Version 2.0.
+  See https://github.com/clap-rs/clap/blob/master/LICENSE-APACHE
+
+thiserror:
+  Copyright (c) 2019 David Tolnay.
+  Licensed under the Apache License, Version 2.0 or the MIT license.
+  See https://github.com/dtolnay/thiserror/blob/master/LICENSE-APACHE
+
+anyhow:
+  Copyright (c) 2019 David Tolnay.
+  Licensed under the Apache License, Version 2.0 or the MIT license.
+  See https://github.com/dtolnay/anyhow/blob/master/LICENSE-APACHE
+
+serde:
+  Copyright (c) 2017 The Serde Developers.
+  Licensed under the Apache License, Version 2.0 or the MIT license.
+  See https://github.com/serde-rs/serde/blob/master/LICENSE-APACHE
+
+For the complete list of third-party components and their licenses,
+please see the Cargo.toml file and individual component repositories.

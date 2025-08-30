@@ -1,0 +1,62 @@
+[package]
+name = "php2ir"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "PHP 8.x → LLVM-IR → native ELF/EXE/Mach-O compiler"
+license = "Apache-2.0"
+repository = "https://github.com/makalin/php2ir"
+keywords = ["php", "compiler", "llvm", "aot", "native"]
+categories = ["development-tools", "compilers"]
+
+[dependencies]
+# LLVM bindings
+inkwell = { git = "https://github.com/TheDan64/inkwell", branch = "master", features = ["llvm16-0"] }
+
+# PHP parsing
+php-parser = "0.15"
+php-ast = "0.1"
+
+# Compiler infrastructure
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.10"
+
+# Data structures
+indexmap = "2.0"
+dashmap = "5.0"
+petgraph = "0.6"
+
+# Utilities
+walkdir = "2.3"
+glob = "0.3"
+regex = "1.0"
+tempfile = "3.0"
+indicatif = "0.17"
+
+[dev-dependencies]
+criterion = "0.5"
+pretty_assertions = "1.0"
+tempfile = "3.0"
+
+[[bench]]
+name = "parser_bench"
+harness = false
+
+[[bench]]
+name = "codegen_bench"
+harness = false
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.dev]
+opt-level = 0
+debug = true
